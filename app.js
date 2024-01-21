@@ -15,7 +15,7 @@ function setDate(){
     // console.log(second)
     
     const hour = now.getHours();
-     const hourss = (hour/60 * 180-50)
+     const hourss = hour/60 
     hourHand.style.transform = `rotate(${hourss}deg)`
     hourHand.style.transformOrigin = '50%  0%';
     hourHand.style.top = '50%';
