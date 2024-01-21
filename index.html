@@ -12,34 +12,42 @@
 
 
     <main class="mx-auto px-full relative h-screen flex items-center justify-center">
-        <div class="bg-white rounded-full absolute border-double border-8 p-3 border-sky-500 h-64 w-64">
-            outer Clock
+        <div class="bg-white rounded-full absolute border-double border-8 p-3  border-sky-500 h-64 w-64">
+      
         </div>
 
-        <div class="bg-white rounded-full absolute border border-5 p-3 border-red-500 h-52 w-52">
-        inner Border
-        </div>
+            <div class="absolute rounded-md bg-slate-700 text-end border-5 border border-red-500 h-56">
+                <span class=" font-semibold text-yellow-50">
+                    <p>00</p>
 
+                </span>
+            </div>
+
+        <div class="bg-white  ease-in  absolute text-end border-5  border-red-500 w-56">
+            <span class="flex  justify-between font-semibold text-orange-500">
+                <p>9</p>
+                <p>3</p>
+            </span>
+          
+        </div>
 
 
         <div class=" rounded-full bg-yellow-200 absolute relative border border-5 p-3 border-yellow-900 h-1 w-1">
-            
-        </div>
-<!-- ------------------  -->
-
-
-
-        <div id="secondHand" class="bg-red-600 ease-in duration-100  absolute border-4 rounded-b-full origin-top  rotate-180  translate-x-1/2 translate-y-1/2 border-yellow-900 h-24 w-1">
-            <!-- -second -->
+                <!-- CLOCK CENTER FRAME  -->
         </div>
 
-        <div class="bg-green-800  absolute border-2 rounded-b-full -rotate-90 origin-top translate-x-1/2 translate-y-1/2 border-red-600 h-20 w-1">
-            <!-- --minit -->
+
+
+
+        <div id="secondHand" class=" ease-in duration-1000 absolute bg-gray-950 rounded-b-full origin-top  rotate-180  translate-x-1/2 translate-y-1/2 border-yellow-900 h-24 w-1">
+            <!-- SECOND HAND  -->
         </div>
 
-        <!-- <div class="bg-white  absolute border-2 rounded-b-full -rotate-180 origin-top translate-x-1/2 translate-y-1/2  border-red-600 h-14 w-1">
-            hur
-        </div> -->
+        <div id="hourHand" class="bg-green-800  absolute border-2 rounded-b-full -rotate-90 origin-top translate-x-1/2 translate-y-1/2 border-red-600 h-20 w-1">
+            <!-- --Hour -->
+        </div>
+
+
 
       </main>
 

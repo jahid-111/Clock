@@ -2,6 +2,7 @@
 
 
 const secondHand = document.getElementById('secondHand') 
+const hourHand = document.getElementById('hourHand') 
 
 function setDate(){
 
@@ -11,12 +12,20 @@ function setDate(){
     secondHand.style.transform = `rotate(${secondDeg}deg)`
     secondHand.style.transformOrigin = '50%  0%';
     secondHand.style.top = '50%';
-    console.log(second)
+    // console.log(second)
     
-
+    const hour = now.getHours();
+     const hourss = (hour/60 * 180-50)
+    hourHand.style.transform = `rotate(${hourss}deg)`
+    hourHand.style.transformOrigin = '50%  0%';
+    hourHand.style.top = '50%';
+    
+    // const setHrs =  
+    console.log(hour)
+    console.log(second  )
 
 
 }
 
 setInterval(setDate, 1000)
-setDate()
+// setDate()
