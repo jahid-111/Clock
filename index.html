@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-500">
+
+
+
+
+    <main class="mx-auto px-full relative h-screen flex items-center justify-center">
+        <div class="bg-white rounded-full absolute border-double border-8 p-3 border-sky-500 h-64 w-64">
+            outer Clock
+        </div>
+
+        <div class="bg-white rounded-full absolute border border-5 p-3 border-red-500 h-52 w-52">
+        inner Border
+        </div>
+
+
+
+        <div class=" rounded-full bg-yellow-200 absolute relative border border-5 p-3 border-yellow-900 h-1 w-1">
+            
+        </div>
+<!-- ------------------  -->
+
+
+
+        <div id="secondHand" class="bg-red-600 ease-in duration-100  absolute border-4 rounded-b-full origin-top  rotate-180  translate-x-1/2 translate-y-1/2 border-yellow-900 h-24 w-1">
+            <!-- -second -->
+        </div>
+
+        <div class="bg-green-800  absolute border-2 rounded-b-full -rotate-90 origin-top translate-x-1/2 translate-y-1/2 border-red-600 h-20 w-1">
+            <!-- --minit -->
+        </div>
+
+        <!-- <div class="bg-white  absolute border-2 rounded-b-full -rotate-180 origin-top translate-x-1/2 translate-y-1/2  border-red-600 h-14 w-1">
+            hur
+        </div> -->
+
+      </main>
+
+
+      <script src="app.js"></script>
+</body>
+</html>
